@@ -1,6 +1,8 @@
 spring:
   profiles:
-   active: dev
+    active:
+    - dev
+---
 server:
   port: 8101
 hnuspringcloud:
@@ -16,5 +18,4 @@ eureka:
   instace:
     prefer-ip-address: true
     instance-id: config-client-dev
----
 
