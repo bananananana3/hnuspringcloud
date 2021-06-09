@@ -22,7 +22,7 @@ eureka:
 server:
   port: 8102
 hnuspringcloud:
-  hello: test-v0.1
+  hello: test-v0.3
 spring:
   profiles: test
   application:
