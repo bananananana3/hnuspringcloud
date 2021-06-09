@@ -1,7 +1,7 @@
 spring:
   profiles:
     active:
-    - dev
+    - test
 ---
 server:
   port: 8101
@@ -18,4 +18,21 @@ eureka:
   instace:
     prefer-ip-address: true
     instance-id: config-client-dev
+---
+server:
+  port: 8102
+hnuspringcloud:
+  hello: test-v0.1
+spring:
+  profiles: test
+  application:
+    name: hnuspringcloud-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:7001/eureka,http://eureka2:7002/eureka,http://eureka3:7003/eureka
+  instace:
+    prefer-ip-address: true
+    instance-id: config-client-test
+
 
